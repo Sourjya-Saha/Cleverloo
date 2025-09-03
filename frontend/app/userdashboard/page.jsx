@@ -721,6 +721,21 @@ const RestroomFinder = () => {
 
     return (
         <div className="fixed inset-0 flex flex-col bg-white font-sans">
+             <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+          toastClassName="custom-toast"
+          progressClassName="custom-progress"
+          style={{ zIndex: 1000 }}
+        />
             {/* FIXED HEADER WITH GRADIENT */}
             <div className="fixed top-0 left-0 right-0 z-[1001] bg-gradient-to-br from-[#BDFa70] to-[#87BC43] p-4 flex items-center justify-between shadow-lg">
                 <Image
@@ -1155,21 +1170,7 @@ const RestroomFinder = () => {
                     </button>
                 </div>
             </div>
-            <ToastContainer
-          position="top-right"
-          autoClose={3000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-          toastClassName="custom-toast"
-          progressClassName="custom-progress"
-          style={{ zIndex: 1000 }}
-        />
+           
         </div>
     );
 };
