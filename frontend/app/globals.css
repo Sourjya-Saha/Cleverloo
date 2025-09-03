@@ -1,0 +1,251 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Your existing theme inline */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Your existing dark mode media query */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Your existing body styles */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom Blob Animation for background */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Custom Scrollbar */
+.custom-scroll::-webkit-scrollbar {
+  height: 4px;
+  
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #cb3a1e;
+  
+}
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #a52c17;
+}
+
+.custom-toast {
+  height: 85px;             /* increased notification height */
+  font-size: 12px;               /* bigger font */
+  font-family: 'Poppins';
+  text-transform: uppercase;     /* make all text uppercase */
+  letter-spacing: 1.5px;         /* wider spacing */
+}
+
+/* Customize the progress bar */
+.custom-progress {
+  background: green !important;
+  height: 4px !important;        /* increased thickness of progress bar */
+}
+
+@keyframes floatAround {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  25%  { transform: translate(50px, -30px) rotate(10deg); }
+  50%  { transform: translate(-30px, 40px) rotate(-10deg); }
+  75%  { transform: translate(40px, 20px) rotate(5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.float-around {
+  animation: floatAround 12s ease-in-out infinite;
+}
+.float-around-delay {
+  animation: floatAround 15s ease-in-out infinite;
+}
+.float-around-fast {
+  animation: floatAround 8s ease-in-out infinite;
+}
+
+.Toastify__toast--success {
+    background-color: #026738;
+}
+
+.Toastify__toast--error {
+    background-color: #d9534f;
+}
+
+/* Custom animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(10deg); }
+}
+
+@keyframes float-delay {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(-10deg); }
+}
+
+@keyframes float-short {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+@keyframes blob {
+    0%, 100% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+.animate-float { animation: float 6s ease-in-out infinite; }
+.animate-float-delay { animation: float-delay 7s ease-in-out infinite; }
+.animate-float-short { animation: float-short 5s ease-in-out infinite; }
+.animate-blob { animation: blob 7s ease-in-out infinite; }
+.animate-fadeInDown { animation: fadeInDown 0.8s ease-out; }
+.animate-slideInUp { animation: slideInUp 0.8s ease-out; }
+.animate-slideInLeft { animation: slideInLeft 0.5s ease-out; }
+.animate-shake { animation: shake 0.5s ease-in-out; }
+.animation-delay-200 { animation-delay: 0.2s; }
+.animation-delay-400 { animation-delay: 0.4s; }
+.animation-delay-600 { animation-delay: 0.6s; }
+.animation-delay-2000 { animation-delay: 2s; }
+
+/* Add these animations to your global CSS file (globals.css or tailwind.css) */
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+/* Smooth image transitions */
+.image-transition {
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Enhanced backdrop blur support */
+.backdrop-blur-perfect {
+  backdrop-filter: blur(20px) saturate(180%) brightness(120%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%) brightness(120%);
+}
+
+/* Professional hover effects */
+.professional-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.professional-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Smooth scale animations */
+.scale-hover {
+  transition: transform 0.2s ease-in-out;
+}
+
+.scale-hover:hover {
+  transform: scale(1.05);
+}
+
+/* Custom scrollbar for professional look */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #026738;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #87BC43;
+}
+
+/* Line clamp utility for text truncation */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
