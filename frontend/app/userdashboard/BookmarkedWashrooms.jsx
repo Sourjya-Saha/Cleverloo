@@ -12,7 +12,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { BookmarkIcon as BookmarkSolidIcon } from "@heroicons/react/24/solid";
 import { FaToilet, FaToiletPaper } from "react-icons/fa";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from 'react-toastify';
 import RestroomDetails from "./RestroomDetails";
 const apiUrl = "https://cleverloo-backend-1.vercel.app";
 const BookmarkedWashrooms = ({
