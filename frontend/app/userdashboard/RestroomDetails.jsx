@@ -29,7 +29,7 @@ import {
   FaSubway,
   FaToiletPaper 
 } from "react-icons/fa";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from 'react-toastify';
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import UserProfile from './UserProfile'; // Make sure to import UserProfile
 import BookmarkedWashrooms from "./BookmarkedWashrooms";
