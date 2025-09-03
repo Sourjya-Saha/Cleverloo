@@ -1846,24 +1846,7 @@ app.use((error, req, res, next) => {
     });
 });
 
-// Handle 404 for unknown routes
-app.use('*', (req, res) => {
-    res.status(404).json({
-        message: 'Route not found',
-        availableRoutes: [
-            'GET /',
-            'GET /health',
-            'POST /signup/user',
-            'POST /signin/user',
-            'POST /signup/restroom',
-            'POST /signin/restroom',
-            'GET /restrooms',
-            'GET /restrooms/search',
-            'GET /restrooms/:id',
-            'GET /restrooms/:id/details'
-        ]
-    });
-});
+
 
 // Export the Express app for Vercel
 module.exports = app;
