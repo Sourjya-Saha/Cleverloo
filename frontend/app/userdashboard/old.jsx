@@ -31,7 +31,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import UserProfile from './UserProfile'; // Import the new UserProfile component
 
-const apiUrl = "http://localhost:5000";
+const apiUrl = "https://cleverloo-backend-1.vercel.app";
 
 // Utility functions for data persistence using localStorage
 const saveUserData = (key, data) => {

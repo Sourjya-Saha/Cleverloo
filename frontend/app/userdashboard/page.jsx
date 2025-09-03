@@ -52,7 +52,7 @@ import BookmarkedWashrooms from './BookmarkedWashrooms';
   // Refresh API every 10 seconds
 
 
-const apiUrl = "http://localhost:5000";
+const apiUrl = "https://cleverloo-backend-1.vercel.app";
 
 // Utility functions for data persistence using state only
 const saveUserData = (key, data) => {

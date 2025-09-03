@@ -34,7 +34,7 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import UserProfile from './UserProfile'; // Make sure to import UserProfile
 import BookmarkedWashrooms from "./BookmarkedWashrooms";
 import WriteReview from "./WriteReview";
-const apiUrl = "http://localhost:5000";
+const apiUrl = "https://cleverloo-backend-1.vercel.app";
 const RestroomDetails = ({
   restroomId,
   onClose,

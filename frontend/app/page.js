@@ -18,7 +18,7 @@ import {
 import Image from 'next/image';
 import { FaToilet, FaToiletPaper } from 'react-icons/fa';
 
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL = 'https://cleverloo-backend-1.vercel.app';
 
 export default function LoginPage() {
   const [isUser, setIsUser] = useState(true);

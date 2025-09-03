@@ -17,7 +17,7 @@ import {
 } from '@heroicons/react/24/solid';
 import { ArrowPathIcon } from '@heroicons/react/24/outline';
 
-const apiUrl = "http://localhost:5000";
+const apiUrl = "https://cleverloo-backend-1.vercel.app";
 
 const UserProfile = ({ session, handleBackClick, updateSession }) => {
   const { update: updateNextAuthSession } = useSession();

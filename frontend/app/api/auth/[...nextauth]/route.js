@@ -1,7 +1,7 @@
 import NextAuth from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
 
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL = 'https://cleverloo-backend-1.vercel.app';
 
 const authOptions = {
   providers: [

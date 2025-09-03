@@ -10,7 +10,7 @@ import {
 } from '@heroicons/react/24/solid';
 import { toast } from 'react-toastify';
 import Image from 'next/image';
-const apiUrl = "http://localhost:5000";
+const apiUrl = "https://cleverloo-backend-1.vercel.app";
 const WriteReview = ({ 
   restroomId, 
   restroomName, 

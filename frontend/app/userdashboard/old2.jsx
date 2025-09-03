@@ -26,7 +26,7 @@ import {
 } from "react-icons/fa";
 import { toast } from "react-toastify";
 
-const apiUrl = "http://localhost:5000";
+const apiUrl = "https://cleverloo-backend-1.vercel.app";
 
 
 

@@ -19,7 +19,7 @@ import {
 import { ArrowPathIcon, MapPinIcon as MapPinOutlineIcon } from '@heroicons/react/24/outline';
 import { FaToilet } from 'react-icons/fa';
 
-const apiUrl = "http://localhost:5000";
+const apiUrl = "https://cleverloo-backend-1.vercel.app";
 
 const RestroomProfile = ({ session, handleBackClick, updateSession }) => {
   const { update: updateNextAuthSession } = useSession();
