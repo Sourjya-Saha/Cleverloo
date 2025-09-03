@@ -8,7 +8,7 @@ import {
 import { 
   StarIcon as StarSolidIcon 
 } from '@heroicons/react/24/solid';
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import Image from 'next/image';
 const apiUrl = "https://cleverloo-backend-1.vercel.app";
 const WriteReview = ({ 
