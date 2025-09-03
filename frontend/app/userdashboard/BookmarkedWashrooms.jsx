@@ -364,6 +364,21 @@ const RestroomCard = ({ washroom, typeInfo, removeBookmark, handleViewDetails, r
           </button>
         </div>
       </div>
+      <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+          toastClassName="custom-toast"
+          progressClassName="custom-progress"
+          style={{ zIndex: 1000 }}
+        />
     </div>
   );
 };
