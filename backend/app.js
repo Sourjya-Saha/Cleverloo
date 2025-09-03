@@ -974,7 +974,7 @@ app.get('/user/bookmarks/details', authenticateToken, async (req, res) => {
         }
         
         // Get detailed information for each bookmarked restroom
-        const placeholders = bookmarkIds.map((_, index) => `${index + 1}`).join(',');
+        const placeholders = bookmarkIds.map((_, index) => `$${index + 1}`).join(',');
         const restroomsResult = await pool.query(
             `SELECT 
                 r.*,
