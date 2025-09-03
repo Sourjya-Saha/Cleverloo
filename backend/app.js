@@ -1845,8 +1845,11 @@ app.use((error, req, res, next) => {
         error: process.env.NODE_ENV === 'development' ? error.message : 'Something went wrong'
     });
 });
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 1c7a00e (Update backend changes)
 // Export the Express app for Vercel
 module.exports = app;
