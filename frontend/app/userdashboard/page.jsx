@@ -734,6 +734,7 @@ const RestroomFinder = () => {
           theme="light"
           toastClassName="custom-toast"
           progressClassName="custom-progress"
+           style={{ zIndex: 1005 }}      
           
         />
             {/* FIXED HEADER WITH GRADIENT */}
