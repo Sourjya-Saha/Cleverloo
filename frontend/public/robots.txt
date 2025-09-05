@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cleverloo.vercel.app/sitemap.xml
