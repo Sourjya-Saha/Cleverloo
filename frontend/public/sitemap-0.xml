@@ -7,7 +7,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
   <url>
-    <loc>https://cleverloo.vercel.app/</loc>
+    <loc>https://cleverloo.vercel.app</loc>
     <lastmod>2025-09-05T00:00:00.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
