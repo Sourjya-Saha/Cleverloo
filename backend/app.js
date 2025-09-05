@@ -974,7 +974,7 @@ app.get('/user/bookmarks/details', authenticateToken, async (req, res) => {
         }
         
         // Get detailed information for each bookmarked restroom
-        const placeholders = bookmarkIds.map((_, index) => `${index + 1}`).join(',');
+        const placeholders = bookmarkIds.map((_, index) => `$${index + 1}`).join(',');
         const restroomsResult = await pool.query(
             `SELECT 
                 r.*,
@@ -1845,11 +1845,8 @@ app.use((error, req, res, next) => {
         error: process.env.NODE_ENV === 'development' ? error.message : 'Something went wrong'
     });
 });
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> 1c7a00e (Update backend changes)
 // Export the Express app for Vercel
 module.exports = app;

@@ -12,7 +12,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { BookmarkIcon as BookmarkSolidIcon } from "@heroicons/react/24/solid";
 import { FaToilet, FaToiletPaper } from "react-icons/fa";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from 'react-toastify';
 import RestroomDetails from "./RestroomDetails";
 const apiUrl = "https://cleverloo-backend-1.vercel.app";
 const BookmarkedWashrooms = ({
@@ -364,6 +364,21 @@ const RestroomCard = ({ washroom, typeInfo, removeBookmark, handleViewDetails, r
           </button>
         </div>
       </div>
+      <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+          toastClassName="custom-toast"
+          progressClassName="custom-progress"
+          style={{ zIndex: 1000 }}
+        />
     </div>
   );
 };
