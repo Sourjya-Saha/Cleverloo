@@ -712,7 +712,7 @@ if (showWriteReview) {
                   className="flex items-center justify-center space-x-2 text-[#026738] font-semibold text-sm uppercase tracking-wider hover:underline mx-auto transition-all duration-200"
                   aria-label="View more rooms"
                 >
-                  <span>+ VIEW MORE ROOMS</span>
+                  <span>VIEW MORE ROOMS</span>
                   <ChevronRightIcon className="h-4 w-4" />
                 </button>
               ) : (
