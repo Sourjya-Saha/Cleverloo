@@ -191,19 +191,20 @@ const WriteReview = ({
   };
 
   // Get user initials or fallback
-  const getUserDisplayName = () => {
-    if (session?.user?.name) {
-      const names = session.user.name.split(' ');
-      if (names.length > 1) {
-        return names[0][0] + names[names.length - 1][0];
-      }
-      return names[0].substring(0, 1);
+const getUserDisplayName = () => {
+  if (session?.user?.name) {
+    const names = session.user.name.trim().split(' ').filter(name => name.length > 0); // Add filter to remove empty strings
+    console.log("Name:", names)
+    if (names.length > 1) {
+      return names[0][0] + names[names.length - 1][0];
     }
-    if (session?.user?.email) {
-      return session.user.email.substring(0, 1);
-    }
-    return 'ME';
-  };
+    return names[0].substring(0, 1);
+  }
+  if (session?.user?.email) {
+    return session.user.email.substring(0, 1);
+  }
+  return 'ME';
+};
 
   return (
     <div className="fixed inset-0 bg-white z-50 flex flex-col">
