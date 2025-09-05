@@ -46,7 +46,9 @@ export default function RootLayout({ children }) {
         {/* Required for PWA install and iOS Add to Home Screen */}
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#87bc43" />
-        <link rel="apple-touch-icon" href="/Clever Loo LOGO - 3.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/cleverloo.png" />
+        <link rel="apple-touch-startup-image" href="/splash-640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="/splash-1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="Clever Loo" />
