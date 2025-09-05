@@ -9,12 +9,12 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/Clever Loo LOGO - 3.png",
+      "src": "/cleverloo.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/Clever Loo LOGO - 3.png",
+      "src": "/cleverloo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
