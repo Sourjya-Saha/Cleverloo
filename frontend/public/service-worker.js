@@ -1,16 +1,13 @@
 // public/service-worker.js
 
 self.addEventListener("install", (event) => {
-  console.log("Service Worker installed.");
-  self.skipWaiting(); // Activate immediately
+  console.log("Service Worker installing.");
+  // Skip waiting to activate the new service worker immediately
+  self.skipWaiting();
 });
 
 self.addEventListener("activate", (event) => {
-  console.log("Service Worker activated.");
-  event.waitUntil(clients.claim()); // Take control of uncontrolled clients
-});
-
-self.addEventListener("fetch", (event) => {
-  // Optional: just pass through all requests
-  event.respondWith(fetch(event.request));
+  console.log("Service Worker activating.");
+  // Claim clients to take control of unhandled pages
+  event.waitUntil(clients.claim());
 });
