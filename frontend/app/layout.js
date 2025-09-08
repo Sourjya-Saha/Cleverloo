@@ -6,6 +6,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import NextAuthSessionProvider from './provider';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ServiceWorkerRegister from './ServiceWorkerRegister';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -56,6 +57,7 @@ export default function RootLayout({ children }) {
       <body className={`${poppins.className} bg-[#026738]`}>
         <NextAuthSessionProvider>
           {children}
+  <ServiceWorkerRegister />
         </NextAuthSessionProvider>
 
         
