@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
           {children}
         </NextAuthSessionProvider>
 
-        {/* Global Toast notifications for entire app */}
+        
         <ToastContainer
           position="top-right"
           autoClose={3000}
