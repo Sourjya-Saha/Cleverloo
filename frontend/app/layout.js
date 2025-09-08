@@ -24,7 +24,7 @@ export const metadata = {
     title: 'Clever Loo - Smart Restroom Queue System',
     description: 'Find a clean public restroom or manage your restroom facility with ease.',
     url: 'https://cleverloo.vercel.app',
-    siteName: 'Clever Loo',
+    siteName: 'CleverLoo',
     images: [
       {
         url: '/cleverloo.png',
