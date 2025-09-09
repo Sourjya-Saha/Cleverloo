@@ -1,11 +1,11 @@
 {
-  "name": "Clever Loo - Smart Restroom System",
-  "short_name": "Clever Loo",
-  "description": "Clever Loo lets you book and manage restroom queues online. Avoid waiting and find the nearest clean public restroom with ease.",
+  "name": "CleverLoo - Smart Restroom System",
+  "short_name": "CleverLoo",
+  "description": "CleverLoo lets you book and manage restroom queues online. Avoid waiting and find the nearest clean public restroom with ease.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#026738",
-  "theme_color": "#87bc43",
+  "background_color": "#b6e373",
+  "theme_color": "#b6e373",
   "orientation": "portrait",
   "icons": [
     {
