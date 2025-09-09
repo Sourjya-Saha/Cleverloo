@@ -1,5 +1,4 @@
 // public/service-worker.js
-
 self.addEventListener("install", (event) => {
   console.log("Service Worker installing.");
   // Skip waiting to activate the new service worker immediately
